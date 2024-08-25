@@ -10,3 +10,7 @@ Example collection of ways to work on Python's data types: Bytes, Dictionary, Li
 The examples use self-documenting expressions, added in Python 3.8.
 
 **The files are not meant to be run as a script. Only some output is displayed. Read and type or copy-paste the code yourself in Python's interpreter, chunk by chunk.**
+
+---
+
+Used to be part of an older repository that ended up cluttered, creating the need to separate my Python notes from the web-dev-related and other misc stuff.
