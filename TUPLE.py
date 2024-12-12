@@ -1,4 +1,4 @@
-# tuples are ordered, immutable, and heterogeneous. Duplicates aren't allowed in a set. They may contain duplicates.
+# tuples are ordered, immutable, and heterogeneous. They may contain duplicates.
 
 tuple_methods = [method for method in dir(tuple) if not method.startswith('_')]
 print(sorted(tuple_methods))
