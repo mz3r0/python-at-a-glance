@@ -18,7 +18,7 @@ if "mouse" in set1:                # Membership test
 set1.discard("elephant")           # Doesn't care if it doesn't exist.
 print(set1)                        # Note: set.discard() always returns None
 
-for item in set1:                  # Iteration AKA for each item
+for item in set1:                  # Iteration, for each item
     print(item)
 
 print("Item count:", len(set1))    # Length / size / item count
