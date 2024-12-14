@@ -59,6 +59,9 @@ print([x for x in range(10) if x % 2 == 1])
 print([x for x in range(10) if x % 2 == 1 if x < 5])
 print([x + 1 for x in range(10) if x % 2 == 1])
 print([x + y for x in '123' for y in 'abc'])
+print(['A' if x % 2 == 0 else 'B' if x % 3 != 0 else 'C' for x in range(10)])
+# ['A', 'B', 'A', 'C', 'A', 'B', 'A', 'B', 'A', 'C']
+
 
 # Mind the order of nested loops
 
@@ -92,7 +95,7 @@ list2 = sorted(list1)           # list1 is unmodified; since Python 2.4
 
 # Side note: When sorting in place, the sort() method returns None to emphasize this side effect.
 
-list3 = sorted(list1, key=lambda x: x.lower()) # case insensitive ; will give error as not all elements of list are strings and .lower() is not applicable
+# list3 = sorted(list1, key=lambda x: x.lower()) # Error: .lower() is not applicable as not all items are strings
 list4 = sorted(list1, reverse=True) # Reverse / descending order
 print(list1, list2, list3, list4)
 
@@ -102,7 +105,7 @@ students = [('Bob', 'B', 12), ('Pete', 'B', 10), ('Tom', 'A', 15)]
 # Sorting by Grade (ascending)
 print(sorted(students, key=lambda student: student[1])) # Grade at index 1
 # Sorting first by Grade (ascending) and second by Age (descending)
-print(sorted(students, key=lambda x: (x[1], -x[2]))) # Grade at ubdex 1, Age at index 2
+print(sorted(students, key=lambda x: (x[1], -x[2]))) # Grade at index 1, Age at index 2
 
 # Unchanged values -> ascending sort
 # Inverting values -> descending sort
@@ -116,9 +119,9 @@ fruit2 = fruit          # (Shallow) Copy by assignment
 fruit3 = fruit[:]       # (Shallow) Copy by slicing
 fruit4 = list(fruit)    # (Shallow) Copy using type constructor
 
-fruit == fruit2 == fruit3 == fruit4     # True. They all have euqal value.
+fruit == fruit2 == fruit3 == fruit4     # True. They all have equal value.
 fruit is fruit2                         # True. fruit and fruit2 are the same object.
-id(fruit) == id(fruit2)                 # True. This check is done by is operator.
+id(fruit) == id(fruit2)                 # True. This check is done by the is operator.
 
 fruit is fruit3                         # False. fruit and fruit3 are different objects.
 fruit is fruit4                         # False. fruit and fruit3 are different objects.
