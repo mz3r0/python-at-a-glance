@@ -37,7 +37,6 @@ next_to_last = list3[-2]        # Next-to-last item (same for strings)
 list4 = list1[:]                # A shallow list copy
 print(list1 == list4)           # True: same by value
 print(list1 is list4)           # False: not same by reference
-list5 = list1[:]
 
 list6 = [1, 2] + [2, 3, 4]      # Concatenation
 list6 += [5, 6]                 # Concatenation
