@@ -31,6 +31,8 @@ list3 = [6, 7, 8, 9]
 for i in range(0, len(list3)):  # Read-write iteration
     list3[i] += 1                 # Item access AKA element access by index
 
+# Note about indices: Any expression evaluating to an integer can be used as an index
+
 last = list3[-1]                # Last item (same for strings)
 next_to_last = list3[-2]        # Next-to-last item (same for strings)
 
