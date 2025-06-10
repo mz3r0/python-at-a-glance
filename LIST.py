@@ -40,6 +40,7 @@ print(list1 is list4)           # False: not same by reference
 
 list6 = [1, 2] + [2, 3, 4]      # Concatenation
 list6 += [5, 6]                 # Concatenation
+list6[0:3] = []  # Clear partially or fully / Remove elements by empty assignment
 del list6[:]                    # Clear / empty / erase contents
 list6.clear()                   # Clear / empty / erase contents
 print(list6)
