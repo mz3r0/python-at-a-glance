@@ -189,7 +189,7 @@ print(listoflists)                  # [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0
 listoflists[0][2] = 1               # Oh no.
 print(listoflists)                  # [[0, 0, 1], [0, 0, 1], [0, 0, 1], [0, 0, 1]]
 
-listoflists=[[0]*4 for i in range(5)]  # The better approach
+listoflists=[[0]*4 for _ in range(5)]  # The better approach
 
 
 # Unpacking lists
