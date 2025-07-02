@@ -1,16 +1,15 @@
 # python-at-a-glance
-Example collection of ways to work on Python's data types: Bytes, Dictionary, List, Set, Tuple and more.
 
-## Content includes
-- Various brief documentation
+Each script focuses on a single Python data type or Python-related topic.
+
+## This reference contains
+- Various documentation of no more than a few lines
 - Sources
-- Multiple examples separated by 2 newlines in the same file
+- Multiple examples (separated by 2 newlines)
 - Version specific notes
 
-The examples use self-documenting expressions, added in Python 3.8.
+Some examples make use of self-documenting expressions which appeared in Python 3.8.
 
-**The files are not meant to be run as a script. Only some output is displayed. Read and type or copy-paste the code yourself in Python's interpreter, chunk by chunk.**
+## Important
 
----
-
-Used to be part of an older repository that ended up cluttered, creating the need to separate my Python notes from the web-dev-related and other misc stuff.
+**All scripts are meant to be read. I recommended typing or copy-pasting the code by yourself in Python's interpreter bit by bit instead of running everything at once.**
